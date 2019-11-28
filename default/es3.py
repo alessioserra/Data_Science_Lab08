@@ -131,7 +131,6 @@ reg4.fit(windows_train,y_train)
 y_pred4 = reg4.predict(windows_test)
 print('R2 score of SVR:',r2_score(y_test,y_pred4))
 
-
 """Final plot"""
 if plot:
     fig = plot.figure()  
