@@ -74,7 +74,7 @@ X3_train, X3_test, y3_train, y3_test = train_test_split(X, y3, train_size=30, ra
 y3_test = y3_test[X3_test.argsort()]
 X3_test.sort()
 
-"""PLOT with Polynomial"""
+"""PLOT with RandomForestRegressor"""
 plot.scatter(X3_test, y3_test, c ='green')
 reg = RandomForestRegressor(n_estimators=1000)
 reg.fit(X3_train[:,np.newaxis], y3_train) # np.newaxis transform from ROWS VECTOR to COLUMN VECTOR
